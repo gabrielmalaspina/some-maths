@@ -13,15 +13,13 @@
 
 /*
  * Set * createSet (void):
- * It is the first function to be called.
  * It allocates memory for a type-Set object and returns a pointer to it.
  */
 Set * createSet (void);
 
 /*
  * void eraseSet (Set * a_set):
- * It deallocates all the memory used by the implementation of the set pointed to by 'a_set'
- * and sets 'a_set' to NULL.
+ * It deallocates all the memory used by the set pointed to by 'a_set' and sets 'a_set' to NULL.
  */
 void eraseSet (Set *);
 
@@ -35,12 +33,13 @@ void valueIn (double, Set *);
 /*
  * void valueOut (double value, Set * a_set):
  * If in the set pointed to by 'a_set', it takes the value in 'value' off the so mentioned set.
+ * It does nothing otherwise.
  */
 void valueOut (double, Set *);
 
 /*
  * void allValuesOut (Set * a_set):
- * It takes all values in the set pointed to by 'a_set' off the so mentioned set.
+ * It takes all values in the set pointed to by 'a_set' off the so mentioned set. It does nothing otherwise.
  */
 void allValuesOut (Set *);
 
